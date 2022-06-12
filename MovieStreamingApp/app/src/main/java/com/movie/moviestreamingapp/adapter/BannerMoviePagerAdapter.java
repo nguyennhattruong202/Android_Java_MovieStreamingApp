@@ -1,6 +1,7 @@
 package com.movie.moviestreamingapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.bumptech.glide.Glide;
+import com.movie.moviestreamingapp.MovieDetails;
 import com.movie.moviestreamingapp.R;
 import com.movie.moviestreamingapp.model.BannerMovies;
 
@@ -46,6 +48,17 @@ public class BannerMoviePagerAdapter extends PagerAdapter {
         ImageView bannerImage = view.findViewById(R.id.banner_image);
         Glide.with(context).load(bannerMoviesList.get(position).getImageUrl()).into(bannerImage);
         container.addView(view);
+        bannerImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MovieDetails.class);
+                intent.putExtra("id", bannerMoviesList.get(position).getId());
+                intent.putExtra("movieName", bannerMoviesList.get(position).getMovieName());
+                intent.putExtra("imageUrl", bannerMoviesList.get(position).getImageUrl());
+                intent.putExtra("fileUrl", bannerMoviesList.get(position).getFileUrl());
+                context.startActivity(intent);
+            }
+        });
         return view;
     }
 }
