@@ -9,9 +9,18 @@
        android:id="@+id/exo_player"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       app:controller_layout_id="@layout/custom_controller"
        app:shutter_background_color="#FF000000"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintBottom_toBottomOf="parent"/>
+   <ProgressBar
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:id="@+id/progress_bar"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
