@@ -28,7 +28,6 @@
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/movie_image"/>
-
     <Button
         android:id="@+id/play_button"
         android:layout_width="match_parent"
@@ -40,7 +39,7 @@
         android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
         android:drawablePadding="20dp"
         android:paddingLeft="20dp"
-        android:text="Start Over"
+        android:text="Watch now"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -49,5 +48,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/movie_name" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
