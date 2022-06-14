@@ -191,7 +191,6 @@ public class MainActivity extends AppCompatActivity {
         nestedScrollView.scrollTo(0,0);
         appBarLayout.setExpanded(true);
     }
-    //Check VideoPlayerActivity.setUpExoPlayer(String url)
     //Deleted ApiInterface
     //Deleted RetrofitClient
 }
