@@ -191,6 +191,4 @@ public class MainActivity extends AppCompatActivity {
         nestedScrollView.scrollTo(0,0);
         appBarLayout.setExpanded(true);
     }
-    //Deleted ApiInterface
-    //Deleted RetrofitClient
 }
